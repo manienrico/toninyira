@@ -1,5 +1,14 @@
 export default function ItemFootnote(){
     return(
-        <div></div>
+        <section>
+            <sub>
+                <h5>{footnoteHead}</h5>
+                <h5>{footnoteHead}</h5>
+            </sub>
+            <div>
+                <div>{footnoteText}</div>
+                <div>{footnoteText}</div>
+            </div>
+        </section>
     )
 }
