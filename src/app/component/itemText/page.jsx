@@ -1,5 +1,8 @@
-export default function ItemText(){
+export default function ItemText({item,itemCalories}){
     return(
-        <div></div>
+        <div>
+            <h3>{item}</h3>
+            <sub>{itemCalories}</sub>
+        </div>
     )
 }
