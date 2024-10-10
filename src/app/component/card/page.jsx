@@ -1,14 +1,25 @@
 import ItemFootnote from "../itemFootnote/page";
 import ItemText from "../itemText/page";
 
-export default function Card({pic}){
+import Image from "next/image";
+
+export default function Card({altern}){
     return(
-        <div className="flex items-center flex-col bg-white rounded-2xl ">
-            <div className="flex justify-center items-center flex-col">
-                <section>{pic}</section>
+        <div className="flex items-center flex-col bg-white rounded-2xl relative shadow-xl">
+            <div className="flex flex-col">
+                <section className="flex flex-col absolute bottom-20" >
+                    <Image 
+                    src="/images/png1.svg"
+                        width={100}
+                        height={100}
+                        alt={altern}
+                        
+                    />
+                </section>
                 <ItemText item="QQQQQQQQQ" itemCalories="qqqqq" />
             </div>
-            <ItemFootnote footnoteHead="fffffffffffff" footnoteHead1="zzzzzzz" footnoteText1="xxxxxxxxxxxxx" footnoteText="yyyyyyyyy" />
+            <hr className="absolute border-t-4 border-blue-500 my-4" />
+            <ItemFootnote footnoteHead="fffffffffffff" footnoteHead1="zzzzzzz" footnoteText="yyyyy" footnoteText1="xxxxxx" />
         </div>
     )
 }
