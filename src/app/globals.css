@@ -20,6 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* .backgroundImage {
+  hero-image: "url('/hero-bg.jpg')";
+} */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

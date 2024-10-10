@@ -1,14 +1,14 @@
 import ItemFootnote from "../itemFootnote/page";
 import ItemText from "../itemText/page";
 
-export default function Card(){
+export default function Card({pic}){
     return(
-        <div>
-            <div>
-                <section>pic</section>
-                <ItemText />
+        <div className="flex items-center flex-col">
+            <div className="flex justify-center items-center flex-col">
+                <section>{pic}</section>
+                <ItemText item="QQQQQQQQQ" itemCalories="qqqqq" />
             </div>
-            <ItemFootnote />
+            <ItemFootnote footnoteHead="fffffffffffff" footnoteHead1="zzzzzzz" footnoteText1="xxxxxxxxxxxxx" footnoteText="yyyyyyyyy" />
         </div>
     )
 }

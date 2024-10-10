@@ -1,6 +1,7 @@
 //import type { Metadata } from "next";
-import localFont from "next/font/local";
+//import localFont from "next/font/local";
 import "./globals.css";
+//import Image from "next/image";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -21,9 +22,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        
-      >
+      <body className='bg-[url("/images/bg.svg")] overflow-hidden '>
         <header>
           <nav>
             <a href="/">Home</a>
