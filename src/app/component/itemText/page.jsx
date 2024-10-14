@@ -1,7 +1,7 @@
 export default function ItemText({item,itemCalories}){
     return(
-        <section className="flex flex-col z-10 mt-12 py-6">
-            <h3>{item}</h3>
+        <section className="flex flex-col justify-center items-center mt-10 py-4">
+            <h3 className="justify-center ">{item}</h3>
             <sub className="flex justify-center">{itemCalories}</sub>
         </section>
     )
