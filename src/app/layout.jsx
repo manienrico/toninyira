@@ -26,9 +26,9 @@ export default function RootLayout({ children }) {
         <header className="flex flex-row justify-around p-4 items-center" >
           <div className="flex justify-self-start " >Toninyira</div>
           <nav className="flex justify-items-center " >
-            <a href="/" className=" px-3 py-3" >Home</a>
-            <a href="/about" className="mx-4 px-3 py-3" >About Us</a>
-            <a href="/menu" className=" px-3 py-3" >Menu</a>
+            <a href="/" className=" px-3 py-3 hover:border-b-2 " >Home</a>
+            <a href="/about" className="mx-4 px-3 py-3 hover:border-b-2 " >About Us</a>
+            <a href="/menu" className=" px-3 py-3 hover:border-b-2 " >Menu</a>
           </nav>
           <div className="" ></div>
         </header>
